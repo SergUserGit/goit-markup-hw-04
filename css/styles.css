@@ -17,6 +17,7 @@
   --item-portfolio-color: #EEEEEE;
   --border-color: #ECECEC;
   --gradient-color: rgba(47, 48, 58, 0.4);
+  --company-border: #AFB1B8;
 
 }
 
@@ -329,6 +330,79 @@ body {
 
 .block-team {
   padding: 12px;
+}
+
+/*section regular customers*/
+.regularcustomers {
+  background-color: var(--background-white-color);
+}
+
+.company-iconeone {
+  width: 41px;
+  height: 46.7px;
+}
+
+.company-iconetwo {
+  width: 40px;
+  height: 52px;
+}
+
+.company-iconethree {
+  width: 43.46px;
+  height: 41.18px;
+}
+
+.company-iconefour {
+  width: 84.44px;
+  height: 40.62px;
+}
+
+.company-iconefive {
+  width: 62.54px;
+  height: 45.43px;
+}
+
+.company-iconesix {
+  width: 93.79px;
+  height: 43.93px;
+}
+
+.block-companyone {
+  padding: 7px 6.3px 7px 32px;
+}
+
+.block-companytwo {
+  padding: 3px 33px 5px 33px;
+}
+
+.block-companythree {
+  padding: 8.7px 10.12px 8.7px 29.68px;
+}
+
+.block-companyfour {
+  padding: 8.7px 10.68px 8.7px 11px;
+}
+
+.block-companyfive {
+  padding: 6.77px 22px 7.8px 22px;
+}
+
+.block-companysix {
+  padding: 6.77px 6px 9.31px 6px;
+}
+
+.block-company {
+  width: 170px;
+
+  padding: 16px 32px;
+  border: 1px solid var(--company-border);
+  border-radius: 4px;
+}
+
+.company-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
 
 /*section footer*/
