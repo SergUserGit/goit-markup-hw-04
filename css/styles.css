@@ -145,6 +145,8 @@ body {
 }
 
 .header-contact {
+  display: flex;
+  align-items: center;
   margin-right: 49px;
 }
 
@@ -156,7 +158,8 @@ body {
   margin-right: 10px;
 }
 
-.convert-icon:hover {
+.convert-icon:hover,
+.telephone-icone:hover {
   stroke: var(--text-blue-color);
 }
 
@@ -165,14 +168,28 @@ body {
   height: 16px;
   display: block;
   margin-right: 10px;
+  stroke: var(--text-head-color);
 }
 
-.icon-adress {
+.ref-convert {
+
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 31px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  text-decoration: none;
+
 }
 
-
+.span-adress {
+  display: block;
+}
 
 .header-contact:last-child {
   margin-right: 0
@@ -194,7 +211,8 @@ body {
 .ref-header:hover,
 .ref-header:focus,
 .head-phone:hover,
-.head-phone:focus {
+.head-phone:focus,
+.span-adress:hover {
   color: var(--text-blue-color);
 }
 
@@ -324,7 +342,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-
 .team-member {
   margin-bottom: 10px;
 
@@ -367,20 +384,32 @@ body {
 }
 
 .block-team {
+  display: block;
+
   padding-left: 12px;
   padding-top: 12px;
   padding-right: 12px;
   padding-bottom: 8px;
 }
 
-.icom-teaminsta:hover {
-  stroke: var(--background-white-color);
+.icon-twitter {
+  fill: var(--company-border);
 }
 
-.bloc-teaminsta:hover {
+.icon-twitter:hover,
+.icon-twitter:focus {
+  fill: var(--background-white-color)
+}
+
+.block-team:hover,
+.block-team:focus {
   background-color: var(--text-blue-color);
   border-radius: 50%;
-  padding-bottom: 7px;
+}
+
+.icom-teaminsta:hover,
+.icom-teaminsta:focus {
+  stroke: var(--background-white-color);
 }
 
 
@@ -407,11 +436,6 @@ body {
 .company-iconefour {
   width: 84.44px;
   height: 40.62px;
-  fill: var(--company-border);
-}
-
-.company-iconefour:hover {
-  fill: var(--text-blue-color);
 }
 
 .company-iconefive {
@@ -424,42 +448,43 @@ body {
   height: 43.93px;
 }
 
-.block-companyone {
-  padding: 7px 6.3px 7px 32px;
-}
-
-.block-companytwo {
-  padding: 3px 33px 5px 33px;
-}
-
-.block-companythree {
-  padding: 8.7px 10.12px 8.7px 29.68px;
-}
-
-.block-companyfour {
-  padding: 8.7px 10.68px 8.7px 11px;
-}
-
-
-.block-companyfive {
-  padding: 6.77px 22px 7.8px 22px;
-}
-
-.block-companysix {
-  padding: 6.77px 6px 9.31px 6px;
-}
-
-.block-company {
-  width: 170px;
-
+.company-ref {
+  display: block;
   padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
   border: 1px solid var(--company-border);
+  border-radius: 4px;
+
+}
+
+.company-ref:hover {
+  border: 1px solid var(--text-blue-color);
   border-radius: 4px;
 }
 
-.block-companyhover:hover {
+.company-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-company {
+  fill: var(--company-border);
+}
+
+
+.icon-company:hover,
+.icon-company:focus {
   fill: var(--text-blue-color);
-  border: 1px solid var(--text-blue-color);
+}
+
+
+.block-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .company-list {
@@ -537,32 +562,18 @@ body {
 
 .block-instagram {
   background-color: var(--color-iconeone);
-  border-radius: 50px;
-}
-
-.block-twitter {
-  background-color: var(--text-blue-color);
-  border-radius: 50px;
-}
-
-.block-facebook {
-  background-color: var(--color-iconeone);
-  border-radius: 50px;
-}
-
-.block-linkedin {
-  background-color: var(--color-iconeone);
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 /*section hero-portfolio*/
 .hero-portfolio {
-  padding-top: 94px;
   background-color: var(--background-white-color);
 }
 
 .button-list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .button-item {
@@ -599,13 +610,6 @@ body {
 }
 
 /*section category-elements*/
-.category-elements {
-  padding-top: 50px;
-  padding-bottom: 94px;
-
-  background-color: var(--background-white-color);
-}
-
 .category-group {
   display: flex;
   flex-wrap: wrap;
@@ -616,7 +620,7 @@ body {
 .list-portfolio {
   width: 370px;
   background: var(--background-white-color);
-  border-bottom: 1px solid var(--item-portfolio-color);
+  border: 1px solid var(--item-portfolio-color);
 }
 
 .list-portfolio:hover {
