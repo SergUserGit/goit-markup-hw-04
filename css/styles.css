@@ -151,16 +151,10 @@ body {
 }
 
 .convert-icon {
-  stroke: var(--text-head-color);
   width: 16px;
   height: 12px;
   display: block;
   margin-right: 10px;
-}
-
-.convert-icon:hover,
-.telephone-icone:hover {
-  stroke: var(--text-blue-color);
 }
 
 .telephone-icone {
@@ -168,7 +162,6 @@ body {
   height: 16px;
   display: block;
   margin-right: 10px;
-  stroke: var(--text-head-color);
 }
 
 .ref-convert {
@@ -178,13 +171,33 @@ body {
   padding-top: 32px;
   padding-bottom: 31px;
 
+  font-family: var(--font-roboto);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
-  color: var(--main-color);
-  text-decoration: none;
+  color: var(--text-head-color);
+  fill: var(--text-head-color);
 
+  text-decoration: none;
+}
+
+
+.ref-convert :hover,
+.ref-convert :focus {
+  color: var(--text-blue-color);
+  fill: var(--text-blue-color);
+}
+
+.ref-mail {
+  fill: var(--text-head-color);
+  color: var(--text-head-color);
+}
+
+.ref-mail:hover,
+.ref-mail:focus {
+  fill: var(--text-blue-color);
+  color: var(--text-blue-color);
 }
 
 .span-adress {
@@ -209,10 +222,7 @@ body {
 }
 
 .ref-header:hover,
-.ref-header:focus,
-.head-phone:hover,
-.head-phone:focus,
-.span-adress:hover {
+.ref-header:focus {
   color: var(--text-blue-color);
 }
 
@@ -407,9 +417,13 @@ body {
   border-radius: 50%;
 }
 
+.icom-teaminsta {
+  fill: var(--company-border);
+}
+
 .icom-teaminsta:hover,
 .icom-teaminsta:focus {
-  stroke: var(--background-white-color);
+  fill: var(--background-white-color);
 }
 
 
