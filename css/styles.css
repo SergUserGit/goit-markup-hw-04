@@ -79,7 +79,7 @@ body {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -352,6 +352,10 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.card-team {
+  padding-bottom: 30px;
+}
+
 .team-member {
   margin-bottom: 10px;
 
@@ -390,7 +394,6 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
 .block-team {
